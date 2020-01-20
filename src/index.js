@@ -14,7 +14,6 @@ ReactDOM.render(
                 <Route path="/about" component={About} />
             </main>
         </div>
-    </Router>, 
+    </Router>,
     document.getElementById("root")
-    
 )
