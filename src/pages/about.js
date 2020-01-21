@@ -1,14 +1,12 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import Logo from "../logo.svg"
 import "../App.scss"
 
 const About = () => {
     return (
         <div className="about">
-            <p>Welcome to the About Page</p>
-            <Link className ="App-link" to= "/">Link to Home</Link>
-            <img className="about-img" width="275" src={Logo} alt=""/>
+            <p>Welcome to the other Page</p>
+            <Link className ="App-link" to="/">Back</Link>
         </div>
     )
 }
