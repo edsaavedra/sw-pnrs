@@ -1,9 +1,16 @@
-$bl1: #E9F4FF;
+$bl1: #e2f0ff;
+$bl2: #c6def9;
+$bl3: #0B6E9D;
+$bl4: #013259;
+$bl5: #031721;
+$bl6: #037BC8;
+$bl7: #10C1F2;
 $white: #FFF;
 $gr1: #f5f5f5;
 
+
 .App {
-  background: $gr1;
+  background: linear-gradient(135deg, $bl1 0%,$bl2 100%);
   display: grid;
   grid-template-areas: ". a a ." ". a a .";
   grid-template-columns: 2fr 8fr 8fr 2fr;
@@ -12,9 +19,9 @@ $gr1: #f5f5f5;
   text-align: center;
 
   .form {
-    background: linear-gradient(135deg, $white 0%,$bl1 100%);
-    box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+    background: linear-gradient(135deg, $bl3 0%,$bl4 100%);
+    box-shadow: 7px 6px 20px 0px rgba(0, 0, 0, 0.48);
+    border-radius: 30px;
     grid-area: 2 / 2 / 4 / 4;
     max-height: 85vh;
     max-width: 85vw;
