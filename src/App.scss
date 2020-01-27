@@ -1,29 +1,93 @@
-$bl1: #e2f0ff;
-$bl2: #c6def9;
-$bl3: #0B6E9D;
-$bl4: #013259;
-$bl5: #031721;
-$bl6: #037BC8;
-$bl7: #10C1F2;
+
+
+$bl1: #105065;
+$bl2: #0b304e;
+$bl3: #027991;
+$bl4: #54d7c0;
+$bl5: #085c9f;
 $white: #FFF;
 $gr1: #f5f5f5;
 
 
 .App {
   background: linear-gradient(135deg, $bl1 0%,$bl2 100%);
+  color: $white;
   display: grid;
-  grid-template-areas: ". a a ." ". a a .";
-  grid-template-columns: 2fr 8fr 8fr 2fr;
-  grid-template-rows: 2fr 8fr 8fr 2fr;
+  grid-template-areas: ". t t ."
+                       ". d d ."
+                       ". f f .";
+  grid-template-columns: 1fr 8fr 8fr 1fr;
+  grid-template-rows: 1fr 1fr 8fr;
   height: 100vh;
-  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+
+  .title {
+    font-weight: bold;
+    grid-area: t;
+    font-size: 2.5em;
+    padding: 20px 0;
+  }
+  .subtitle {
+    grid-area: d;
+    padding: 20px 0;
+    font-size: 1.5em;
+  }
 
   .form {
-    background: linear-gradient(135deg, $bl3 0%,$bl4 100%);
-    box-shadow: 7px 6px 20px 0px rgba(0, 0, 0, 0.48);
-    border-radius: 30px;
-    grid-area: 2 / 2 / 4 / 4;
-    max-height: 85vh;
-    max-width: 85vw;
+    grid-area: f;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    max-height: 300px;
+
+      .field {
+        background: linear-gradient(135deg, $bl3 0%,$bl4 100%);
+        box-shadow:
+          0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+          0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+          0 12.5px 10px rgba(0, 0, 0, 0.06),
+          0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+          0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+          0 100px 80px rgba(0, 0, 0, 0.12);
+        border-radius: 10px;
+        margin: 10px;
+        height: 80%;
+        width: 90%;
+
+        &.roundtrip {
+          display: grid;
+          align-items: center;
+          justify-items: center;
+          label {
+            display: block;
+          }
+        }
+        &.passangers{
+          
+        }
+        &.payment{
+          
+        }
+      }
+      .submit {
+        background: linear-gradient(135deg, $bl5 0%,$bl2 100%);
+        border-radius: 25px;
+        border: none;
+        color: $white;
+        cursor: pointer;
+        display: block;
+        font-family: 'Nunito', serif;
+        font-size: 1.6em;
+        grid-column: 1 / 3;
+        height: 50px;
+        margin: 0;
+        outline: none;
+        padding: 0;
+        width: 90%;
+      }
   }
 }
