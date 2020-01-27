@@ -22,7 +22,7 @@ class App  extends Component {
         <form className="form">
 
           <div className="field roundtrip">
-            <span className="title">Trip Type</span>
+            <span className="field-title">Trip Type</span>
             <label for="roundtrip">
               <input type="radio" name="triptype" value="roundtrip" id="roundtrip"/>
               <span className="roundtrip">Round Trip</span>
@@ -39,20 +39,19 @@ class App  extends Component {
 
           <div className="field passangers">
             <label for="passengers">
-              <span className="passengers">passengers</span>
-              <input type="range" min="1" max="8" value="1" id="passengers"/>
+              <span className="field-title">Passengers</span>
+              <input type="range" min="1" max="8" value="1" id="passengers" className="range"/>
             </label>
           </div>
 
           <div className="field payment">
             <label for="payment">
+              <span className="field-title">Payment</span>
               <span className="payment">Dollars</span>
               <input type="checkbox" value="1" id="payment"/>
               <span className="payment">Points</span>
             </label>
           </div>
-
-          <div className="field"></div>
 
           <input type="button" className="submit" value="Go"/>
         </form>

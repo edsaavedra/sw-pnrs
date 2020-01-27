@@ -8,7 +8,6 @@ $bl5: #085c9f;
 $white: #FFF;
 $gr1: #f5f5f5;
 
-
 .App {
   background: linear-gradient(135deg, $bl1 0%,$bl2 100%);
   color: $white;
@@ -34,18 +33,49 @@ $gr1: #f5f5f5;
     font-size: 1.5em;
   }
 
+  input[type="radio"] {
+    -webkit-appearance: none;
+    border-radius: 50%;
+    border: 2px solid $bl5;
+    cursor: pointer;
+    display: inline-block;
+    height: 20px;
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+    width: 20px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    &:checked {
+      &:before {
+        transform: scale(18);
+        background: $white;
+      }
+    }
+    &:before {
+      background: transparent;
+      border-radius: 50%;
+      content: '';
+      display: block;
+      height: 1px;
+      position: absolute;
+      transform-origin: 50% 50%;
+      transition: all .3s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+      width: 1px;
+      z-index: 0;
+      left: 8px;
+      top: 8px;
+    }
+    &:focus {outline: none;}
+  }
+
   .form {
     grid-area: f;
     text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
     max-height: 300px;
 
       .field {
-        background: linear-gradient(135deg, $bl3 0%,$bl4 100%);
+        //background: linear-gradient(135deg, $bl3 0%,$bl4 100%);
         box-shadow:
           0 2.8px 2.2px rgba(0, 0, 0, 0.034),
           0 6.7px 5.3px rgba(0, 0, 0, 0.048),
@@ -54,23 +84,55 @@ $gr1: #f5f5f5;
           0 41.8px 33.4px rgba(0, 0, 0, 0.086),
           0 100px 80px rgba(0, 0, 0, 0.12);
         border-radius: 10px;
-        margin: 10px;
-        height: 80%;
-        width: 90%;
+        margin: 10px 0;
+        width: 100%;
+
+        .field-title {
+          grid-area: t;
+          font-size: 1.2em;
+          font-weight: bold;
+          margin: 10px 0;
+        }
 
         &.roundtrip {
-          display: grid;
           align-items: center;
-          justify-items: center;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1.2fr;
+          grid-template-areas: "t t t"
+                               "r o m";
           label {
-            display: block;
+            cursor: pointer;
+            &:nth-child(1) {grid-area: r}
+            &:nth-child(2) {grid-area: o}
+            &:nth-child(3) {grid-area: m}
+            span {
+              line-height: 1em;
+              display: inline-block;
+              vertical-align: middle;
+            }
           }
         }
         &.passangers{
-          
+          label {
+            align-items: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 2fr;
+            grid-template-areas: "t t t" "r r r"
+          }
+          .range {
+            -webkit-appearance: none;
+          }
         }
         &.payment{
-          
+          label {
+            align-items: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 2fr;
+            grid-template-areas: "t t t" "d c p"
+          }
         }
       }
       .submit {
@@ -84,10 +146,10 @@ $gr1: #f5f5f5;
         font-size: 1.6em;
         grid-column: 1 / 3;
         height: 50px;
-        margin: 0;
+        margin: 0 auto;
         outline: none;
         padding: 0;
-        width: 90%;
+        width: 100%;
       }
   }
 }
