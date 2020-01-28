@@ -33,6 +33,44 @@ $gr1: #f5f5f5;
     font-size: 1.5em;
   }
 
+  .switch {
+    height: 34px;
+    position: relative;
+    width: 60px;
+    input {
+      height: 0;
+      opacity: 0;
+      width: 0;
+      &:checked + .slider {
+        background-color: $bl5;
+        &:before { transform: translateX(26px) }
+      }
+      &:focus + .slider { box-shadow: 0 0 1px $bl5 }
+    }
+    .slider {
+      background-color: $bl1;
+      border-radius: 34px;
+      bottom: 0;
+      cursor: pointer;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transition: .4s;
+      &:before {
+        background-color: $white;
+        border-radius: 50%;
+        bottom: 4px;
+        content: "";
+        height: 26px;
+        left: 4px;
+        position: absolute;
+        transition: .4s;
+        width: 26px;
+      }
+    }
+  }
+
   input[type="radio"] {
     -webkit-appearance: none;
     border-radius: 50%;
@@ -131,7 +169,8 @@ $gr1: #f5f5f5;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 1fr 2fr;
-            grid-template-areas: "t t t" "d c p"
+            grid-template-areas: "t t t" "d c p";
+            justify-items: center
           }
         }
       }

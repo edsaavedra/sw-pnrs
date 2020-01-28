@@ -46,9 +46,12 @@ class App  extends Component {
 
           <div className="field payment">
             <label for="payment">
-              <span className="field-title">Payment</span>
+             <span className="field-title">Payment</span>
               <span className="payment">Dollars</span>
-              <input type="checkbox" value="1" id="payment"/>
+              <div className="switch">
+                <input type="checkbox" value="1" id="payment"/>
+                <span className="slider"></span>
+              </div>
               <span className="payment">Points</span>
             </label>
           </div>
