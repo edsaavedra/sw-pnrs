@@ -8,10 +8,10 @@ import About from "./pages/about"
 
 ReactDOM.render(
     <Router>
-        <main>
+        <React.Fragment>
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
-        </main>
+        </React.Fragment>
     </Router>,
     document.getElementById("root")
 )
