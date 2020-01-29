@@ -1,13 +1,4 @@
-
-
-$bl1: #105065;
-$bl2: #0b304e;
-$bl3: #027991;
-$bl4: #54d7c0;
-$bl5: #085c9f;
-$white: #FFF;
-$gr1: #e0e5ec;
-$gr2: #a3b1c6;
+@import 'commons.scss';
 
 .App {
   background: $gr1;
@@ -23,7 +14,7 @@ $gr2: #a3b1c6;
   height: 90vh;
   left: 50%;
   margin: auto;
-  max-width: 500px;
+  max-width: 400px;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -32,51 +23,13 @@ $gr2: #a3b1c6;
   .title {
     font-weight: bold;
     grid-area: t;
-    font-size: 2.5em;
+    font-size: 2.2em;
     padding: 20px 0;
   }
   .subtitle {
     grid-area: d;
     padding: 20px 0;
-    font-size: 1.5em;
-  }
-
-  .switch {
-    height: 34px;
-    position: relative;
-    width: 60px;
-    input {
-      height: 0;
-      opacity: 0;
-      width: 0;
-      &:checked + .slider {
-        background-color: $bl5;
-        &:before { transform: translateX(26px) }
-      }
-      &:focus + .slider { box-shadow: 0 0 1px $bl5 }
-    }
-    .slider {
-      background-color: $bl1;
-      border-radius: 34px;
-      bottom: 0;
-      cursor: pointer;
-      left: 0;
-      position: absolute;
-      right: 0;
-      top: 0;
-      transition: .4s;
-      &:before {
-        background-color: $white;
-        border-radius: 50%;
-        bottom: 4px;
-        content: "";
-        height: 26px;
-        left: 4px;
-        position: absolute;
-        transition: .4s;
-        width: 26px;
-      }
-    }
+    font-size: 1.2em;
   }
 
   input[type="radio"] {
@@ -115,43 +68,12 @@ $gr2: #a3b1c6;
     &:focus {outline: none;}
   }
 
-  .range {
-    appearance: none;
-    background: $bl5;
-    height: 5px;
-    grid-area: r;
-    margin: 0 auto;
-    outline: none;
-    width: 90%;
-    &::-webkit-slider-thumb {
-      appearance: none;
-      background: $bl2;
-      border-radius: 50%;
-      cursor: pointer;
-      height: 10px;
-      width: 10px;
-      transform-origin: 50% 50%;
-      transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    }
-    &:hover::-webkit-slider-thumb {
-      transform: scale(1.5);
-    }
-  }
-
   .form {
     grid-area: f;
     text-align: center;
     max-height: 300px;
 
       .field {
-        //background: linear-gradient(135deg, $bl3 0%,$bl4 100%);
-/*         box-shadow:
-          0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-          0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-          0 12.5px 10px rgba(0, 0, 0, 0.06),
-          0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-          0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-          0 100px 80px rgba(0, 0, 0, 0.12); */
         border-bottom: 1px solid $gr2;
         margin: 10px 0;
         width: 100%;
@@ -182,30 +104,10 @@ $gr2: #a3b1c6;
             }
           }
         }
-        &.passengers{
-          width: 100%;
-          label {
-            align-items: center;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 2fr;
-            grid-template-areas: "t t t" "r r r"
-          }
-        }
-        &.payment{
-          label {
-            align-items: center;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 2fr;
-            grid-template-areas: "t t t" "d c p";
-            justify-items: center
-          }
-        }
       }
       .submit {
         background: $gr1;
-        box-shadow: -5px -5px 5px $white, 5px 5px 5px $gr2;
+        box-shadow: $soft;
         border-radius: 25px;
         border: none;
         color: $gr2;
@@ -221,7 +123,7 @@ $gr2: #a3b1c6;
         transition: box-shadow .3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
         width: 100%;
         &:hover {
-          box-shadow: -9px -9px 16px $white, 9px 9px 16px $gr2;
+          box-shadow: -5px -5px 10px rgba($white, .8), 5px 5px 10px rgba($gr2, .8);
         }
       }
   }

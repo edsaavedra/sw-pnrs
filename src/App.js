@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.scss';
+import Switch from './components/switch';
+import Range from './components/range';
 
 class App extends Component {
   constructor(props) {
@@ -7,7 +9,7 @@ class App extends Component {
     this.state = {
       form: {
         passengers: 1,
-        payment: true,
+        payment: false,
         tripType: "roundtrip"
       }
     }
@@ -62,37 +64,21 @@ class App extends Component {
             </label>
           </div>
 
-          <div className="field passengers">
-            <label htmlFor="passengers">
-              <span className="field-title">Passengers {passengers}</span>
-              <input
-                type="range"
-                min="1"
-                step="1"
-                max="8"
-                name="passengers"
-                className="range"
-                onChange={this.handleChange}
-                id="passengers"/>
-            </label>
-          </div>
+          <Range
+            changeHandle={this.handleChange}
+            current={passengers.toString()}
+            max="8"
+            min="1"
+            name="passengers"
+            step="1"/>
 
-          <div className="field payment">
-            <label htmlFor="payment">
-              <span className="field-title">Payment</span>
-              <span className="payment">Dollars</span>
-              <div className="switch">
-                <input
-                  type="checkbox"
-                  checked={payment}
-                  name="payment"
-                  onChange={this.handleChange}
-                  id="payment"/>
-                <span className="slider" />
-              </div>
-              <span className="payment">Points</span>
-            </label>
-          </div>
+          <Switch
+            title="Payment"
+            left="Dollars"
+            right="Points"
+            name="payment"
+            checked={payment}
+            changeCallback={this.handleChange}/>
 
           <input type="button" className="submit" value="Go" />
         </form>
