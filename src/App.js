@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import './App.scss';
-import Switch from './components/switch';
+import Radio from './components/radio';
 import Range from './components/range';
+import Switch from './components/switch';
+import './App.scss';
 
 class App extends Component {
   constructor(props) {
@@ -22,6 +23,10 @@ class App extends Component {
     this.setState({ form });
   }
 
+  handleSubmit = () => {
+    
+  }
+
   render() {
     const { tripType, passengers, payment } = this.state.form;
     return (
@@ -30,38 +35,26 @@ class App extends Component {
         <p className="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, quae.</p>
         <form className="form">
 
-          <div className="field roundtrip">
+          <div className="field trip-type">
             <span className="field-title">Trip Type</span>
-            <label htmlFor="roundtrip">
-              <input
-                type="radio"
+            <Radio
                 name="tripType"
                 value="roundtrip"
                 checked={tripType === "roundtrip"}
-                onChange={this.handleChange}
-                id="roundtrip"/>
-              <span className="roundtrip">Round Trip</span>
-            </label>
-            <label htmlFor="oneway">
-              <input
-                type="radio"
+                changeHandle={this.handleChange}
+                label="Round Trip"/>
+            <Radio
                 name="tripType"
                 value="oneway"
                 checked={tripType === "oneway"}
-                onChange={this.handleChange}
-                id="oneway"/>
-              <span className="oneway">One Way</span>
-            </label>
-            <label htmlFor="multicity">
-              <input
-                type="radio"
-                name="tripType"
-                value="multicity"
-                checked={tripType === "multicity"}
-                onChange={this.handleChange}
-                id="multicity"/>
-              <span className="multicity">Multy City</span>
-            </label>
+                changeHandle={this.handleChange}
+                label="One Way"/>
+            <Radio
+              changeHandle={this.handleChange}
+              checked={tripType === "multicity"}
+              label="Multi City"
+              name="tripType"
+              value="multicity"/>
           </div>
 
           <Range
@@ -80,7 +73,7 @@ class App extends Component {
             checked={payment}
             changeCallback={this.handleChange}/>
 
-          <input type="button" className="submit" value="Go" />
+          <input type="button" className="submit" value="Go" onSubmit={this.handleSubmit} />
         </form>
       </section>
     );

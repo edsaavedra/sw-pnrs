@@ -9,3 +9,10 @@ $gr2: #a3b1c6;
 
 $soft: -9px -9px 16px $white, 9px 9px 16px $gr2;
 $softInner: -5px -5px 5px $white inset, 5px 5px 5px $gr2 inset;
+
+@mixin field-title {
+    grid-area: t;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0;
+}

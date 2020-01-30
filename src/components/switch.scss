@@ -7,6 +7,10 @@
         width: 90px;
     }
 
+    .field-title {
+        @include field-title
+    }
+
     label {
         align-items: center;
         display: grid;
