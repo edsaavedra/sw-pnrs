@@ -1,0 +1,21 @@
+@import '../commons.scss';
+
+.results-component {
+    background: $bl2;
+    clip-path: circle(0 at 50% 50%);
+    color: $white;
+    display: grid;
+    align-items: center;
+    height: 100%;
+    left: -50%;
+    position: absolute;
+    text-align: center;
+    top: -50%;
+    transform: translate(50%, 50%);
+    transition: clip-path .3s cubic-bezier(0.77, 0, 0.175, 1);
+    width: 100%;
+    z-index: 2;
+    &.open {
+        clip-path: circle(100% at 50% 50%);
+    }
+}

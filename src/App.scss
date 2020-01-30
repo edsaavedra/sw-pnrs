@@ -1,7 +1,7 @@
 @import "commons.scss";
 
 .App {
-  background: $gr1;
+  background: linear-gradient(90deg, $gr1 0%, lighten($gr1, 3%) 100%);
   box-shadow: -9px -9px 16px $white, 9px 9px 16px $gr2;
   border-radius: 30px;
   color: $gr2;
@@ -16,6 +16,7 @@
   left: 50%;
   margin: auto;
   max-width: 400px;
+  overflow: hidden;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);

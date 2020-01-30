@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Radio from './components/radio';
 import Range from './components/range';
+import Results from './components/results';
 import Switch from './components/switch';
 import './App.scss';
 
@@ -12,7 +13,8 @@ class App extends Component {
         passengers: 1,
         payment: false,
         tripType: "roundtrip"
-      }
+      },
+      open: false
     }
   }
 
@@ -24,7 +26,7 @@ class App extends Component {
   }
 
   handleSubmit = () => {
-    
+    this.setState({open: !this.state.open});
   }
 
   render() {
@@ -73,8 +75,10 @@ class App extends Component {
             checked={payment}
             changeCallback={this.handleChange}/>
 
-          <input type="button" className="submit" value="Go" onSubmit={this.handleSubmit} />
+          <input type="button" className="submit" value="Go" onClick={this.handleSubmit} />
         </form>
+
+        <Results open={this.state.open} close={this.handleSubmit}/>
       </section>
     );
   }
