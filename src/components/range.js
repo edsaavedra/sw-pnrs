@@ -8,6 +8,7 @@ const Range = ({ min, max, step, name, changeHandle, current }) => {
         <div className={classNames}>
             <label htmlFor={name}>
                 <span className="field-title">Passengers {current}</span>
+                <div className="input-container">
                     <input
                         className="range"
                         id={name}
@@ -17,6 +18,7 @@ const Range = ({ min, max, step, name, changeHandle, current }) => {
                         onChange={changeHandle}
                         step={step}
                         type="range"/>
+                </div>
             </label>
         </div>
     );

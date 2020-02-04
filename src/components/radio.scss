@@ -2,41 +2,40 @@
 
 .radio-component {
   cursor: pointer;
-  input[type="radio"] {
-    appearance: none;
-    border-radius: 50%;
-    border: 2px solid $bl5;
-    cursor: pointer;
+  .radio-container {
     display: inline-block;
-    height: 20px;
     margin: 0 10px 0 0;
     vertical-align: middle;
-    width: 20px;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    &:checked {
-      &:before {
-        transform: scale(20);
-        background: $bl5;
-      }
-    }
-    &:before {
-      background: transparent;
+    input[type="radio"] {
+      align-items: center;
+      appearance: none;
       border-radius: 50%;
-      content: "";
-      display: block;
-      height: 1px;
-      position: absolute;
-      transform-origin: 50% 50%;
-      transition: all 0.3s cubic-bezier(0.95, 0.05, 0.795, 0.035);
-      width: 1px;
-      z-index: 0;
-      left: 8px;
-      top: 8px;
-    }
-    &:focus {
-      outline: none;
+      box-shadow: $soft;
+      cursor: pointer;
+      display: grid;
+      height: 25px;
+      justify-content: center;
+      margin: 0;
+      width: 25px;
+      &:checked {
+        &:before {
+          transform: scale(1);
+        }
+      }
+      &:before {
+        background: $bl5;
+        border-radius: 50%;
+        content: "";
+        display: block;
+        height: 20px;
+        transform-origin: 50% 50%;
+        transform: scale(0);
+        transition: all 0.3s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+        width: 20px;
+      }
+      &:focus {
+        outline: none;
+      }
     }
   }
   span {
