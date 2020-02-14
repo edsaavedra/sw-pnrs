@@ -10,7 +10,9 @@
       align-items: center;
       appearance: none;
       border-radius: 50%;
-      box-shadow: $soft;
+      background: linear-gradient(315deg, #f0f5fd, #caced4);
+      box-shadow: -3px -3px 6px #aaaeb3,
+                  3px 3px 6px #ffffff;
       cursor: pointer;
       display: grid;
       height: 25px;

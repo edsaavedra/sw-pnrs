@@ -4,6 +4,7 @@ import Range from './components/range';
 import Results from './components/results';
 import Switch from './components/switch';
 import './App.scss';
+import getPnr from './generate-pnr';
 
 class App extends Component {
   constructor(props) {
@@ -26,7 +27,8 @@ class App extends Component {
   }
 
   handleSubmit = () => {
-    this.setState({open: !this.state.open});
+    // this.setState({open: !this.state.open});
+    getPnr();
   }
 
   render() {
@@ -85,4 +87,3 @@ class App extends Component {
 }
 
 export default App;
-
