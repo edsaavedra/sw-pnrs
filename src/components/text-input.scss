@@ -1,0 +1,10 @@
+@import '../commons.scss';
+
+.text-input-component {
+    appearance: none;
+    border-radius: 50%;
+    box-shadow: $soft;
+    height: 30px;
+    outline: none;
+    width: 100%;
+}
