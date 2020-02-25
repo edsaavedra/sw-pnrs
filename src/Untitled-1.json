@@ -1,0 +1,306 @@
+{
+  "priceFlightsResults": {
+    "itineraryPricings": [
+      {
+        "passengerType": "ADULT",
+        "numberOfPassengers": 1,
+        "accountNumber": null,
+        "rapidRewardTier": null,
+        "boundFlightDetails": [
+          {
+            "segments": [
+              {
+                "originationAirportCode": "HOU",
+                "destinationAirportCode": "DAL",
+                "departureDateTime": "2020-02-19T12:05:00.000-06:00",
+                "arrivalDateTime": "2020-02-19T13:00:00.000-06:00",
+                "marketingCarrier": "WN",
+                "marketingFlightNumber": "6978",
+                "operatingCarrier": "WN",
+                "operatingFlightNumber": null,
+                "aircraftEquipmentType": "73W",
+                "wifiOnBoard": true,
+                "flightDuration": "00:55",
+                "onTimePerformanceKey": "HOUDAL69781205WN",
+                "flightLegs": null,
+                "numberOfStops": 0,
+                "segmentIdentifier": "WN6978HOUDAL20200219"
+              }
+            ],
+            "originationAirportCode": "HOU",
+            "destinationAirportCode": "DAL",
+            "departureDateTime": "2020-02-19T12:05:00.000-06:00",
+            "arrivalDateTime": "2020-02-19T13:00:00.000-06:00",
+            "flightDuration": "00:55",
+            "fareFamily": "ANY",
+            "numberOfStops": 0,
+            "numberOfPlaneChanges": 0
+          },
+          {
+            "segments": [
+              {
+                "originationAirportCode": "DAL",
+                "destinationAirportCode": "HOU",
+                "departureDateTime": "2020-02-23T21:00:00.000-06:00",
+                "arrivalDateTime": "2020-02-23T22:05:00.000-06:00",
+                "marketingCarrier": "WN",
+                "marketingFlightNumber": "2300",
+                "operatingCarrier": "WN",
+                "operatingFlightNumber": null,
+                "aircraftEquipmentType": "73W",
+                "wifiOnBoard": true,
+                "flightDuration": "01:05",
+                "onTimePerformanceKey": "DALHOU23002100WN",
+                "flightLegs": null,
+                "numberOfStops": 0,
+                "segmentIdentifier": "WN2300DALHOU20200223"
+              }
+            ],
+            "originationAirportCode": "DAL",
+            "destinationAirportCode": "HOU",
+            "departureDateTime": "2020-02-23T21:00:00.000-06:00",
+            "arrivalDateTime": "2020-02-23T22:05:00.000-06:00",
+            "flightDuration": "01:05",
+            "fareFamily": "ANY",
+            "numberOfStops": 0,
+            "numberOfPlaneChanges": 0
+          }
+        ],
+        "boundPrices": [
+          {
+            "originationAirportCode": "HOU",
+            "destinationAirportCode": "DAL",
+            "fareProduct": {
+              "productId": "ANY|ADT|YL,Y,HOU,DAL,2020-02-19T12:05-06:00,2020-02-19T13:00-06:00,WN,WN,6978,73W",
+              "fareFamily": "ANY",
+              "farePricingType": "ADULT",
+              "passengerType": "ADULT",
+              "availabilityStatus": "AVAILABLE",
+              "fare": {
+                "baseFare": {
+                  "value": "213.56",
+                  "currencyCode": "USD"
+                },
+                "fareTaxesAndFees": null,
+                "totalTaxesAndFees": {
+                  "value": "30.42",
+                  "currencyCode": "USD"
+                },
+                "totalFare": {
+                  "value": "243.98",
+                  "currencyCode": "USD"
+                },
+                "accrualPoints": null,
+                "fareType": "NONDISCOUNT"
+              },
+              "currencyType": "REVENUE",
+              "segmentFareDetails": [
+                {
+                  "fareFamily": "ANY",
+                  "fareBasisCode": "YL",
+                  "segmentIdentifier": "WN6978HOUDAL20200219"
+                }
+              ]
+            },
+            "total": {
+              "value": "243.98",
+              "currencyCode": "USD"
+            }
+          },
+          {
+            "originationAirportCode": "DAL",
+            "destinationAirportCode": "HOU",
+            "fareProduct": {
+              "productId": "ANY|ADT|YL,Y,DAL,HOU,2020-02-23T21:00-06:00,2020-02-23T22:05-06:00,WN,WN,2300,73W",
+              "fareFamily": "ANY",
+              "farePricingType": "ADULT",
+              "passengerType": "ADULT",
+              "availabilityStatus": "AVAILABLE",
+              "fare": {
+                "baseFare": {
+                  "value": "213.56",
+                  "currencyCode": "USD"
+                },
+                "fareTaxesAndFees": null,
+                "totalTaxesAndFees": {
+                  "value": "30.42",
+                  "currencyCode": "USD"
+                },
+                "totalFare": {
+                  "value": "243.98",
+                  "currencyCode": "USD"
+                },
+                "accrualPoints": null,
+                "fareType": "NONDISCOUNT"
+              },
+              "currencyType": "REVENUE",
+              "segmentFareDetails": [
+                {
+                  "fareFamily": "ANY",
+                  "fareBasisCode": "YL",
+                  "segmentIdentifier": "WN2300DALHOU20200223"
+                }
+              ]
+            },
+            "total": {
+              "value": "243.98",
+              "currencyCode": "USD"
+            }
+          }
+        ],
+        "pricingRecord": {
+          "recordType": "FARE",
+          "farePassengerType": "ADULT",
+          "productIds": [
+            "ANY|ADT|YL,Y,HOU,DAL,2020-02-19T12:05-06:00,2020-02-19T13:00-06:00,WN,WN,6978,73W",
+            "ANY|ADT|YL,Y,DAL,HOU,2020-02-23T21:00-06:00,2020-02-23T22:05-06:00,WN,WN,2300,73W"
+          ],
+          "fare": {
+            "baseFare": {
+              "value": "427.12",
+              "currencyCode": "USD"
+            },
+            "fareTaxesAndFees": [
+              {
+                "code": "US",
+                "codeDescription": "U.S. Transportation Tax",
+                "type": "LO",
+                "typeDescription": "Local",
+                "amount": {
+                  "value": "32.04",
+                  "currencyCode": "USD"
+                }
+              },
+              {
+                "code": "AY",
+                "codeDescription": "U.S. 9/11 Security Fee",
+                "type": "SE",
+                "typeDescription": "Security",
+                "amount": {
+                  "value": "11.20",
+                  "currencyCode": "USD"
+                }
+              },
+              {
+                "code": "ZP",
+                "codeDescription": "U.S. Flight Segment Tax",
+                "type": "VO",
+                "typeDescription": "Trip",
+                "amount": {
+                  "value": "8.60",
+                  "currencyCode": "USD"
+                }
+              },
+              {
+                "code": "XF",
+                "codeDescription": "U.S. Passenger Facility Chg",
+                "type": null,
+                "typeDescription": "Other Tax Type",
+                "amount": {
+                  "value": "9.00",
+                  "currencyCode": "USD"
+                }
+              }
+            ],
+            "totalTaxesAndFees": {
+              "value": "60.84",
+              "currencyCode": "USD"
+            },
+            "totalFare": {
+              "value": "487.96",
+              "currencyCode": "USD"
+            },
+            "accrualPoints": 4272,
+            "fareType": "NONDISCOUNT"
+          },
+          "pricingRecordReference": "1"
+        },
+        "pointsTotal": null,
+        "airTotal": {
+          "value": "487.96",
+          "currencyCode": "USD"
+        },
+        "changeItinerary": null,
+        "changeReservationInformation": null,
+        "waivedFare": null,
+        "promocodeNotification": {
+          "discountUsedType": "NONE",
+          "discountRateType": "NONE",
+          "message": null,
+          "code": null,
+          "errors": [],
+          "alerts": []
+        }
+      }
+    ],
+    "tripType": "roundtrip",
+    "parentRecordLocator": null,
+    "segmentProducts": [
+      {
+        "ADULT": {
+          "productId": "ANY|ADT|YL,Y,HOU,DAL,2020-02-19T12:05-06:00,2020-02-19T13:00-06:00,WN,WN,6978,73W",
+          "classOfService": null,
+          "passengerType": "ADULT",
+          "availabilityStatus": "AVAILABLE",
+          "originalFare": null,
+          "fare": {
+            "baseFare": {
+              "value": "213.56",
+              "currencyCode": "USD"
+            },
+            "totalTaxesAndFees": {
+              "value": "30.42",
+              "currencyCode": "USD"
+            },
+            "totalFare": {
+              "value": "243.98",
+              "currencyCode": "USD"
+            }
+          },
+          "waivedFare": null
+        }
+      },
+      {
+        "ADULT": {
+          "productId": "ANY|ADT|YL,Y,DAL,HOU,2020-02-23T21:00-06:00,2020-02-23T22:05-06:00,WN,WN,2300,73W",
+          "classOfService": null,
+          "passengerType": "ADULT",
+          "availabilityStatus": "AVAILABLE",
+          "originalFare": null,
+          "fare": {
+            "baseFare": {
+              "value": "213.56",
+              "currencyCode": "USD"
+            },
+            "totalTaxesAndFees": {
+              "value": "30.42",
+              "currencyCode": "USD"
+            },
+            "totalFare": {
+              "value": "243.98",
+              "currencyCode": "USD"
+            }
+          },
+          "waivedFare": null
+        }
+      }
+    ]
+  },
+  "a": {
+    "adultPassengersCount": "1",
+    "currencyCode": "USD",
+    "currencyType": "REVENUE",
+    "requiredPricingInfo": true,
+    "segmentProducts": [
+      {
+        "ADULT": "ANY|ADT|YL,Y,HOU,DAL,2020-02-19T12:05-06:00,2020-02-19T13:00-06:00,WN,WN,6978,73W"
+      },
+      {
+        "ADULT": "ANY|ADT|YL,Y,DAL,HOU,2020-02-23T21:00-06:00,2020-02-23T22:05-06:00,WN,WN,2300,73W"
+      }
+    ],
+    "seniorPassengersCount": "0",
+    "application": "air-booking",
+    "site": "southwest"
+  }
+}

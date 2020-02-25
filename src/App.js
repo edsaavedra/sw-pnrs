@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import Date from './components/date';
 import Radio from './components/radio';
 import Range from './components/range';
 import Results from './components/results';
+import Select from './components/select';
 import Switch from './components/switch';
+import TextInput from './components/text-input';
 import './App.scss';
 import getPnr from './generate-pnr';
 
@@ -28,7 +31,7 @@ class App extends Component {
 
   handleSubmit = () => {
     // this.setState({open: !this.state.open});
-    getPnr();
+    getPnr(this.state.form);
   }
 
   render() {
@@ -76,6 +79,10 @@ class App extends Component {
             name="payment"
             checked={payment}
             changeCallback={this.handleChange}/>
+
+            <TextInput />
+            <Select />
+            <Date></Date>
 
           <input type="button" className="submit" value="Go" onClick={this.handleSubmit} />
         </form>

@@ -7,7 +7,7 @@ const confirmation_payload = {
     "contactCountryCode": "1",
     "contactEmailAddress": "",
     "contactMethod": "text",
-    "contactPhoneNumber": "1234567899",
+    "contactPhoneNumber": "6555555555",
     "contactPreferredLanguage": "EN",
     "cvvHidden": false,
     "fundsCoverTotalFlight": false,
@@ -23,125 +23,125 @@ const confirmation_payload = {
     "savedEmailAddress": "",
     "savedReceiptEmailSelected": false,
     "selectedCardInfo": null,
-    "sendYourReceiptEmail": "test@wnco.com",
+    "sendYourReceiptEmail": "mail@mail.com",
     "site": "southwest",
     "upgradeSelectedAfterPricing": false,
     "cartProducts": {
         "air": {
             "fares": {
                 "0": {
-                    "departureDate": "2020-02-19",
-                    "destinationAirportCode": "LAS",
+                    "departureDate": "2020-02-18",
+                    "destinationAirportCode": "FLL",
                     "flightInformation": [
                         {
-                            "flightNumber": "1382",
-                            "aircraftType": "Boeing 737 MAX8"
+                            "flightNumber": "144",
+                            "aircraftType": "Boeing 737-700"
                         }
                     ],
                     "international": false,
-                    "isBestFlightSelected": false,
-                    "isFastestFlightSelected": false,
+                    "isBestFlightSelected": true,
+                    "isFastestFlightSelected": true,
                     "nextDay": false,
-                    "originationAirportCode": "DAL",
+                    "originationAirportCode": "HOU",
                     "stopsDetails": [
                         {
-                            "originationAirportCode": "DAL",
-                            "destinationAirportCode": "LAS",
-                            "flightNumber": "1382",
-                            "legDuration": 175,
+                            "originationAirportCode": "HOU",
+                            "destinationAirportCode": "FLL",
+                            "flightNumber": "144",
+                            "legDuration": 145,
                             "stopDuration": 0,
                             "changePlanes": null,
-                            "departureTime": "06:00",
-                            "arrivalTime": "06:55",
-                            "departureDateTime": "2020-02-19T06:00:00.000-06:00",
-                            "arrivalDateTime": "2020-02-19T06:55:00.000-08:00",
+                            "departureTime": "05:55",
+                            "arrivalTime": "09:20",
+                            "departureDateTime": "2020-02-18T05:55:00.000-06:00",
+                            "arrivalDateTime": "2020-02-18T09:20:00.000-05:00",
                             "operatingCarrierCode": "WN",
                             "marketingCarrierCode": "WN",
-                            "aircraftEquipmentType": "7M8",
+                            "aircraftEquipmentType": "73W",
                             "features": [
                                 "WIFI"
                             ]
                         }
                     ],
                     "ADULT": {
-                        "arrivalTime": "06:55",
-                        "departureTime": "06:00",
+                        "arrivalTime": "09:20",
+                        "departureTime": "05:55",
                         "fareData": {
-                            "productId": "WGA|ADT|ELM7TNF,E,DAL,LAS,2020-02-19T06:00-06:00,2020-02-19T06:55-08:00,WN,WN,1382,7M8",
-                            "classOfService": null,
+                            "productId": "WGA|ADT|ULN0PNR,U,HOU,FLL,2020-02-18T05:55-06:00,2020-02-18T09:20-05:00,WN,WN,144,73W",
+                            "classOfService": "U",
                             "passengerType": "ADULT",
                             "availabilityStatus": "AVAILABLE",
                             "originalFare": null,
                             "fare": {
                                 "baseFare": {
-                                    "value": "90.77",
+                                    "value": "372.73",
                                     "currencyCode": "USD"
                                 },
                                 "totalTaxesAndFees": {
-                                    "value": "21.21",
+                                    "value": "42.35",
                                     "currencyCode": "USD"
                                 },
                                 "totalFare": {
-                                    "value": "111.98",
+                                    "value": "415.08",
                                     "currencyCode": "USD"
                                 },
-                                "accrualPoints": "545"
+                                "accrualPoints": "2237"
                             },
                             "waivedFare": null
                         },
                         "fareType": "WGA",
-                        "isBestFlightSelected": false,
-                        "isFastestFlightSelected": false,
+                        "isBestFlightSelected": true,
+                        "isFastestFlightSelected": true,
                         "flightNumbers": [
-                            "1382"
+                            "144"
                         ],
                         "hasUpgradeData": false,
                         "nextDay": false,
                         "rowSummary": {
-                            "BUS": "309.40",
-                            "ANY": "281.40",
-                            "WGA": "111.98"
+                            "BUS": "516.98",
+                            "ANY": "494.98",
+                            "WGA": "415.08"
                         },
                         "stopsDetails": [
                             {
-                                "originationAirportCode": "DAL",
-                                "destinationAirportCode": "LAS",
-                                "flightNumber": "1382",
-                                "legDuration": 175,
+                                "originationAirportCode": "HOU",
+                                "destinationAirportCode": "FLL",
+                                "flightNumber": "144",
+                                "legDuration": 145,
                                 "stopDuration": 0,
                                 "changePlanes": null,
-                                "departureTime": "06:00",
-                                "arrivalTime": "06:55",
-                                "departureDateTime": "2020-02-19T06:00:00.000-06:00",
-                                "arrivalDateTime": "2020-02-19T06:55:00.000-08:00",
+                                "departureTime": "05:55",
+                                "arrivalTime": "09:20",
+                                "departureDateTime": "2020-02-18T05:55:00.000-06:00",
+                                "arrivalDateTime": "2020-02-18T09:20:00.000-05:00",
                                 "operatingCarrierCode": "WN",
                                 "marketingCarrierCode": "WN",
-                                "aircraftEquipmentType": "7M8",
+                                "aircraftEquipmentType": "73W",
                                 "features": [
                                     "WIFI"
                                 ]
                             }
                         ],
                         "upgradeFare": {
-                            "productId": "BUS|ADT|LZBP8O,L,DAL,LAS,2020-02-19T06:00-06:00,2020-02-19T06:55-08:00,WN,WN,1382,7M8",
-                            "classOfService": null,
+                            "productId": "BUS|ADT|KZBP,K,HOU,FLL,2020-02-18T05:55-06:00,2020-02-18T09:20-05:00,WN,WN,144,73W",
+                            "classOfService": "K",
                             "passengerType": "ADULT",
                             "availabilityStatus": "AVAILABLE",
                             "originalFare": null,
                             "fare": {
                                 "baseFare": {
-                                    "value": "274.42",
+                                    "value": "467.52",
                                     "currencyCode": "USD"
                                 },
                                 "totalTaxesAndFees": {
-                                    "value": "34.98",
+                                    "value": "49.46",
                                     "currencyCode": "USD"
                                 },
                                 "totalFare": {
-                                    "value": "309.40",
+                                    "value": "516.98",
                                     "currencyCode": "USD"
                                 },
-                                "accrualPoints": "1647"
+                                "accrualPoints": "5611"
                             },
                             "waivedFare": null
                         },
@@ -152,31 +152,31 @@ const confirmation_payload = {
                     }
                 },
                 "1": {
-                    "departureDate": "2020-03-04",
-                    "destinationAirportCode": "DAL",
+                    "departureDate": "2020-02-21",
+                    "destinationAirportCode": "HOU",
                     "flightInformation": [
                         {
-                            "flightNumber": "1666",
+                            "flightNumber": "1596",
                             "aircraftType": "Boeing 737-700"
                         }
                     ],
                     "international": false,
-                    "isBestFlightSelected": false,
+                    "isBestFlightSelected": true,
                     "isFastestFlightSelected": false,
                     "nextDay": false,
-                    "originationAirportCode": "LAS",
+                    "originationAirportCode": "FLL",
                     "stopsDetails": [
                         {
-                            "originationAirportCode": "LAS",
-                            "destinationAirportCode": "DAL",
-                            "flightNumber": "1666",
-                            "legDuration": 155,
+                            "originationAirportCode": "FLL",
+                            "destinationAirportCode": "HOU",
+                            "flightNumber": "1596",
+                            "legDuration": 180,
                             "stopDuration": 0,
                             "changePlanes": null,
-                            "departureTime": "18:35",
-                            "arrivalTime": "23:10",
-                            "departureDateTime": "2020-03-04T18:35:00.000-08:00",
-                            "arrivalDateTime": "2020-03-04T23:10:00.000-06:00",
+                            "departureTime": "18:15",
+                            "arrivalTime": "20:15",
+                            "departureDateTime": "2020-02-21T18:15:00.000-05:00",
+                            "arrivalDateTime": "2020-02-21T20:15:00.000-06:00",
                             "operatingCarrierCode": "WN",
                             "marketingCarrierCode": "WN",
                             "aircraftEquipmentType": "73W",
@@ -186,56 +186,56 @@ const confirmation_payload = {
                         }
                     ],
                     "ADULT": {
-                        "arrivalTime": "23:10",
-                        "departureTime": "18:35",
+                        "arrivalTime": "20:15",
+                        "departureTime": "18:15",
                         "fareData": {
-                            "productId": "WGA|ADT|FLMVTNF,F,LAS,DAL,2020-03-04T18:35-08:00,2020-03-04T23:10-06:00,WN,WN,1666,73W",
-                            "classOfService": null,
+                            "productId": "WGA|ADT|FLM3TNF,F,FLL,HOU,2020-02-21T18:15-05:00,2020-02-21T20:15-06:00,WN,WN,1596,73W",
+                            "classOfService": "F",
                             "passengerType": "ADULT",
                             "availabilityStatus": "AVAILABLE",
                             "originalFare": null,
                             "fare": {
                                 "baseFare": {
-                                    "value": "76.82",
+                                    "value": "69.38",
                                     "currencyCode": "USD"
                                 },
                                 "totalTaxesAndFees": {
-                                    "value": "20.16",
+                                    "value": "19.60",
                                     "currencyCode": "USD"
                                 },
                                 "totalFare": {
-                                    "value": "96.98",
+                                    "value": "88.98",
                                     "currencyCode": "USD"
                                 },
-                                "accrualPoints": "461"
+                                "accrualPoints": "417"
                             },
                             "waivedFare": null
                         },
                         "fareType": "WGA",
-                        "isBestFlightSelected": false,
+                        "isBestFlightSelected": true,
                         "isFastestFlightSelected": false,
                         "flightNumbers": [
-                            "1666"
+                            "1596"
                         ],
                         "hasUpgradeData": false,
                         "nextDay": false,
                         "rowSummary": {
-                            "BUS": "309.40",
-                            "ANY": "281.40",
-                            "WGA": "96.98"
+                            "BUS": "516.98",
+                            "ANY": "494.98",
+                            "WGA": "88.98"
                         },
                         "stopsDetails": [
                             {
-                                "originationAirportCode": "LAS",
-                                "destinationAirportCode": "DAL",
-                                "flightNumber": "1666",
-                                "legDuration": 155,
+                                "originationAirportCode": "FLL",
+                                "destinationAirportCode": "HOU",
+                                "flightNumber": "1596",
+                                "legDuration": 180,
                                 "stopDuration": 0,
                                 "changePlanes": null,
-                                "departureTime": "18:35",
-                                "arrivalTime": "23:10",
-                                "departureDateTime": "2020-03-04T18:35:00.000-08:00",
-                                "arrivalDateTime": "2020-03-04T23:10:00.000-06:00",
+                                "departureTime": "18:15",
+                                "arrivalTime": "20:15",
+                                "departureDateTime": "2020-02-21T18:15:00.000-05:00",
+                                "arrivalDateTime": "2020-02-21T20:15:00.000-06:00",
                                 "operatingCarrierCode": "WN",
                                 "marketingCarrierCode": "WN",
                                 "aircraftEquipmentType": "73W",
@@ -245,25 +245,25 @@ const confirmation_payload = {
                             }
                         ],
                         "upgradeFare": {
-                            "productId": "BUS|ADT|LZBP8O,L,LAS,DAL,2020-03-04T18:35-08:00,2020-03-04T23:10-06:00,WN,WN,1666,73W",
-                            "classOfService": null,
+                            "productId": "BUS|ADT|KZBP,K,FLL,HOU,2020-02-21T18:15-05:00,2020-02-21T20:15-06:00,WN,WN,1596,73W",
+                            "classOfService": "K",
                             "passengerType": "ADULT",
                             "availabilityStatus": "AVAILABLE",
                             "originalFare": null,
                             "fare": {
                                 "baseFare": {
-                                    "value": "274.42",
+                                    "value": "467.52",
                                     "currencyCode": "USD"
                                 },
                                 "totalTaxesAndFees": {
-                                    "value": "34.98",
+                                    "value": "49.46",
                                     "currencyCode": "USD"
                                 },
                                 "totalFare": {
-                                    "value": "309.40",
+                                    "value": "516.98",
                                     "currencyCode": "USD"
                                 },
-                                "accrualPoints": "1647"
+                                "accrualPoints": "5611"
                             },
                             "waivedFare": null
                         },
@@ -277,13 +277,13 @@ const confirmation_payload = {
             "id": "air",
             "query": {
                 "adultPassengersCount": "1",
-                "departureDate": "2020-02-19",
+                "departureDate": "2020-02-18",
                 "departureTimeOfDay": "ALL_DAY",
-                "destinationAirportCode": "LAS",
+                "destinationAirportCode": "FLL",
                 "fareType": "USD",
-                "originationAirportCode": "DAL",
+                "originationAirportCode": "HOU",
                 "passengerType": "ADULT",
-                "returnDate": "2020-03-04",
+                "returnDate": "2020-02-21",
                 "returnTimeOfDay": "ALL_DAY",
                 "seniorPassengersCount": "0",
                 "tripType": "roundtrip"
@@ -301,28 +301,28 @@ const confirmation_payload = {
                         {
                             "segments": [
                                 {
-                                    "originationAirportCode": "DAL",
-                                    "destinationAirportCode": "LAS",
-                                    "departureDateTime": "2020-02-19T06:00:00.000-06:00",
-                                    "arrivalDateTime": "2020-02-19T06:55:00.000-08:00",
+                                    "originationAirportCode": "HOU",
+                                    "destinationAirportCode": "FLL",
+                                    "departureDateTime": "2020-02-18T05:55:00.000-06:00",
+                                    "arrivalDateTime": "2020-02-18T09:20:00.000-05:00",
                                     "marketingCarrier": "WN",
-                                    "marketingFlightNumber": "1382",
+                                    "marketingFlightNumber": "144",
                                     "operatingCarrier": "WN",
                                     "operatingFlightNumber": null,
-                                    "aircraftEquipmentType": "7M8",
+                                    "aircraftEquipmentType": "73W",
                                     "wifiOnBoard": true,
-                                    "flightDuration": "02:55",
-                                    "onTimePerformanceKey": "DALLAS13820600WN",
+                                    "flightDuration": "02:25",
+                                    "onTimePerformanceKey": "HOUFLL01440555WN",
                                     "flightLegs": null,
                                     "numberOfStops": 0,
-                                    "segmentIdentifier": "WN1382DALLAS20200219"
+                                    "segmentIdentifier": "WN144HOUFLL20200218"
                                 }
                             ],
-                            "originationAirportCode": "DAL",
-                            "destinationAirportCode": "LAS",
-                            "departureDateTime": "2020-02-19T06:00:00.000-06:00",
-                            "arrivalDateTime": "2020-02-19T06:55:00.000-08:00",
-                            "flightDuration": "02:55",
+                            "originationAirportCode": "HOU",
+                            "destinationAirportCode": "FLL",
+                            "departureDateTime": "2020-02-18T05:55:00.000-06:00",
+                            "arrivalDateTime": "2020-02-18T09:20:00.000-05:00",
+                            "flightDuration": "02:25",
                             "fareFamily": "WGA",
                             "numberOfStops": 0,
                             "numberOfPlaneChanges": 0
@@ -330,28 +330,28 @@ const confirmation_payload = {
                         {
                             "segments": [
                                 {
-                                    "originationAirportCode": "LAS",
-                                    "destinationAirportCode": "DAL",
-                                    "departureDateTime": "2020-03-04T18:35:00.000-08:00",
-                                    "arrivalDateTime": "2020-03-04T23:10:00.000-06:00",
+                                    "originationAirportCode": "FLL",
+                                    "destinationAirportCode": "HOU",
+                                    "departureDateTime": "2020-02-21T18:15:00.000-05:00",
+                                    "arrivalDateTime": "2020-02-21T20:15:00.000-06:00",
                                     "marketingCarrier": "WN",
-                                    "marketingFlightNumber": "1666",
+                                    "marketingFlightNumber": "1596",
                                     "operatingCarrier": "WN",
                                     "operatingFlightNumber": null,
                                     "aircraftEquipmentType": "73W",
                                     "wifiOnBoard": true,
-                                    "flightDuration": "02:35",
-                                    "onTimePerformanceKey": "LASDAL16661835WN",
+                                    "flightDuration": "03:00",
+                                    "onTimePerformanceKey": "FLLHOU15961815WN",
                                     "flightLegs": null,
                                     "numberOfStops": 0,
-                                    "segmentIdentifier": "WN1666LASDAL20200304"
+                                    "segmentIdentifier": "WN1596FLLHOU20200221"
                                 }
                             ],
-                            "originationAirportCode": "LAS",
-                            "destinationAirportCode": "DAL",
-                            "departureDateTime": "2020-03-04T18:35:00.000-08:00",
-                            "arrivalDateTime": "2020-03-04T23:10:00.000-06:00",
-                            "flightDuration": "02:35",
+                            "originationAirportCode": "FLL",
+                            "destinationAirportCode": "HOU",
+                            "departureDateTime": "2020-02-21T18:15:00.000-05:00",
+                            "arrivalDateTime": "2020-02-21T20:15:00.000-06:00",
+                            "flightDuration": "03:00",
                             "fareFamily": "WGA",
                             "numberOfStops": 0,
                             "numberOfPlaneChanges": 0
@@ -359,26 +359,26 @@ const confirmation_payload = {
                     ],
                     "boundPrices": [
                         {
-                            "originationAirportCode": "DAL",
-                            "destinationAirportCode": "LAS",
+                            "originationAirportCode": "HOU",
+                            "destinationAirportCode": "FLL",
                             "fareProduct": {
-                                "productId": "WGA|ADT|ELM7TNF,E,DAL,LAS,2020-02-19T06:00-06:00,2020-02-19T06:55-08:00,WN,WN,1382,7M8",
+                                "productId": "WGA|ADT|ULN0PNR,U,HOU,FLL,2020-02-18T05:55-06:00,2020-02-18T09:20-05:00,WN,WN,144,73W",
                                 "fareFamily": "WGA",
                                 "farePricingType": "ADULT",
                                 "passengerType": "ADULT",
                                 "availabilityStatus": "AVAILABLE",
                                 "fare": {
                                     "baseFare": {
-                                        "value": "90.77",
+                                        "value": "372.73",
                                         "currencyCode": "USD"
                                     },
                                     "fareTaxesAndFees": null,
                                     "totalTaxesAndFees": {
-                                        "value": "21.21",
+                                        "value": "42.35",
                                         "currencyCode": "USD"
                                     },
                                     "totalFare": {
-                                        "value": "111.98",
+                                        "value": "415.08",
                                         "currencyCode": "USD"
                                     },
                                     "accrualPoints": null,
@@ -388,37 +388,39 @@ const confirmation_payload = {
                                 "segmentFareDetails": [
                                     {
                                         "fareFamily": "WGA",
-                                        "fareBasisCode": "ELM7TNF",
-                                        "segmentIdentifier": "WN1382DALLAS20200219"
+                                        "bookingCode": "U",
+                                        "fareBasisCode": "ULN0PNR",
+                                        "seatsAvailable": 9,
+                                        "segmentIdentifier": "WN144HOUFLL20200218"
                                     }
                                 ]
                             },
                             "total": {
-                                "value": "111.98",
+                                "value": "415.08",
                                 "currencyCode": "USD"
                             }
                         },
                         {
-                            "originationAirportCode": "LAS",
-                            "destinationAirportCode": "DAL",
+                            "originationAirportCode": "FLL",
+                            "destinationAirportCode": "HOU",
                             "fareProduct": {
-                                "productId": "WGA|ADT|FLMVTNF,F,LAS,DAL,2020-03-04T18:35-08:00,2020-03-04T23:10-06:00,WN,WN,1666,73W",
+                                "productId": "WGA|ADT|FLM3TNF,F,FLL,HOU,2020-02-21T18:15-05:00,2020-02-21T20:15-06:00,WN,WN,1596,73W",
                                 "fareFamily": "WGA",
                                 "farePricingType": "ADULT",
                                 "passengerType": "ADULT",
                                 "availabilityStatus": "AVAILABLE",
                                 "fare": {
                                     "baseFare": {
-                                        "value": "76.82",
+                                        "value": "69.38",
                                         "currencyCode": "USD"
                                     },
                                     "fareTaxesAndFees": null,
                                     "totalTaxesAndFees": {
-                                        "value": "20.16",
+                                        "value": "19.60",
                                         "currencyCode": "USD"
                                     },
                                     "totalFare": {
-                                        "value": "96.98",
+                                        "value": "88.98",
                                         "currencyCode": "USD"
                                     },
                                     "accrualPoints": null,
@@ -428,13 +430,15 @@ const confirmation_payload = {
                                 "segmentFareDetails": [
                                     {
                                         "fareFamily": "WGA",
-                                        "fareBasisCode": "FLMVTNF",
-                                        "segmentIdentifier": "WN1666LASDAL20200304"
+                                        "bookingCode": "F",
+                                        "fareBasisCode": "FLM3TNF",
+                                        "seatsAvailable": 9,
+                                        "segmentIdentifier": "WN1596FLLHOU20200221"
                                     }
                                 ]
                             },
                             "total": {
-                                "value": "96.98",
+                                "value": "88.98",
                                 "currencyCode": "USD"
                             }
                         }
@@ -442,13 +446,14 @@ const confirmation_payload = {
                     "pricingRecord": {
                         "recordType": "FARE",
                         "farePassengerType": "ADULT",
+                        "farePricingType": "ADULT",
                         "productIds": [
-                            "WGA|ADT|ELM7TNF,E,DAL,LAS,2020-02-19T06:00-06:00,2020-02-19T06:55-08:00,WN,WN,1382,7M8",
-                            "WGA|ADT|FLMVTNF,F,LAS,DAL,2020-03-04T18:35-08:00,2020-03-04T23:10-06:00,WN,WN,1666,73W"
+                            "WGA|ADT|ULN0PNR,U,HOU,FLL,2020-02-18T05:55-06:00,2020-02-18T09:20-05:00,WN,WN,144,73W",
+                            "WGA|ADT|FLM3TNF,F,FLL,HOU,2020-02-21T18:15-05:00,2020-02-21T20:15-06:00,WN,WN,1596,73W"
                         ],
                         "fare": {
                             "baseFare": {
-                                "value": "167.59",
+                                "value": "442.11",
                                 "currencyCode": "USD"
                             },
                             "fareTaxesAndFees": [
@@ -458,7 +463,7 @@ const confirmation_payload = {
                                     "type": "LO",
                                     "typeDescription": "Local",
                                     "amount": {
-                                        "value": "12.57",
+                                        "value": "33.15",
                                         "currencyCode": "USD"
                                     }
                                 },
@@ -494,21 +499,21 @@ const confirmation_payload = {
                                 }
                             ],
                             "totalTaxesAndFees": {
-                                "value": "41.37",
+                                "value": "61.95",
                                 "currencyCode": "USD"
                             },
                             "totalFare": {
-                                "value": "208.96",
+                                "value": "504.06",
                                 "currencyCode": "USD"
                             },
-                            "accrualPoints": 1006,
+                            "accrualPoints": 2654,
                             "fareType": "NONDISCOUNT"
                         },
                         "pricingRecordReference": "1"
                     },
                     "pointsTotal": null,
                     "airTotal": {
-                        "value": "208.96",
+                        "value": "504.06",
                         "currencyCode": "USD"
                     },
                     "changeItinerary": null,
@@ -524,36 +529,36 @@ const confirmation_payload = {
                     }
                 }
             ],
-            "lastPriceUpdate": "2020-02-11T08:50:20-05:00"
+            "lastPriceUpdate": "2020-02-17T16:00:49-05:00"
         }
     },
     "creditCard": {
         "cardNumber": "4211510068850002",
-        "cityTown": "Boston",
+        "cityTown": "nowhere",
         "country": "US",
         "countryCode": "1",
         "creditCardType": "VISA",
-        "expiration": "02-2020",
-        "firstNameOnCard": "John",
-        "lastNameOnCard": "Doe",
-        "phoneNumber": "6666666666",
+        "expiration": "03-2021",
+        "firstNameOnCard": "Peanut",
+        "lastNameOnCard": "Dust",
+        "phoneNumber": "6555555555",
         "primary": false,
         "provinceRegion": "",
-        "securityCode": "123",
-        "state": "MA",
-        "streetAddress": "123 Fake Street",
+        "securityCode": "222",
+        "state": "AS",
+        "streetAddress": "fake street 123",
         "streetAddressSecond": "",
-        "zipCode": "12345",
+        "zipCode": "22222",
         "zipCodeRequired": true
     },
     "passengersList": [
         {
-            "passengerFirstName": "John",
+            "passengerFirstName": "aaa",
             "passengerMiddleName": "",
-            "passengerLastName": "Doe",
+            "passengerLastName": "aaa",
             "passengerSuffix": "0",
             "passengerGender": "MALE",
-            "passengerDateOfBirth": "2000-01-01",
+            "passengerDateOfBirth": "1987-02-01",
             "passengerRapidRewards": "",
             "passengerRedressTravelerNumber": "",
             "passengerKnownTravelerNumber": "",
