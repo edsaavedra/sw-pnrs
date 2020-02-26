@@ -1,10 +1,22 @@
 import React from 'react';
+import './select.scss';
 
-const Select = (props) => {
+const Select = ({ changeHandle, name, label, options, required, value }) => {
     return (
-        <select name="" >
-            <option value="">a</option>
-        </select>
+        <div className="select-component">
+            <label htmlFor={name}>{label} {value}</label>
+            <select
+                value={value}
+                name={name}
+                onChange={changeHandle}
+                required={required}>
+                {options.map((option, _index) => <option
+                    value={option.id}
+                    key={_index}>
+                        {option.id} {option.displayName}
+                </option>)}
+            </select>
+        </div >
     )
 }
 

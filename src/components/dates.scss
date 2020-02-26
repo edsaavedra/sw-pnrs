@@ -1,6 +1,6 @@
 @import '../commons.scss';
 
-.text-input-component {
+.date-component {
     input {
         appearance: none;
         background: $gr1;
@@ -15,6 +15,10 @@
         outline: none;
         padding: 0 15px;
         width: 100%;
+        &::-webkit-inner-spin-button {
+            appearance: none;
+            display: none;
+        }
     }
     label {
         display: block;

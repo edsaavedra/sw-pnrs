@@ -1,9 +1,13 @@
 import React from 'react';
 import "./text-input.scss";
 
-const TextInput = (props) => {
+const TextInput = ({changeCallback, label, name, value}) => {
     return (
-        <input type="text" className="text-input-component"/>
+        <div className="text-input-component">
+            <label htmlFor="textInput">{label}</label>
+            <input
+                type="text" name={name} value={value} onChange={changeCallback}/>
+        </div>
     )
 }
 

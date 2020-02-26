@@ -5,7 +5,7 @@
         align-items: center;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
         grid-template-areas: "t t t""r r r"
     }
     .field-title {

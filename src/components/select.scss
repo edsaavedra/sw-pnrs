@@ -1,1 +1,24 @@
 @import '../commons.scss';
+
+.select-component{
+    select {
+        appearance: none;
+        background: $gr1;
+        border-radius: 15px;
+        border: none;
+        box-shadow: $soft;
+        box-sizing: border-box;
+        color: $bl2;
+        display: block;
+        height: 30px;
+        margin: 0;
+        outline: none;
+        padding: 0 15px;
+        width: 100%;
+    }
+    label {
+        display: block;
+        padding: 10px 0;
+        text-align: left;
+    }
+}

@@ -8,7 +8,6 @@
   display: grid;
   grid-template-areas:
     ". t t ."
-    ". d d ."
     ". f f .";
   grid-template-columns: 1fr 8fr 8fr 1fr;
   grid-template-rows: 1fr 1fr 8fr;
@@ -68,6 +67,24 @@
           }
           &:nth-child(4) {
             grid-area: m;
+          }
+        }
+      }
+
+      &.dates,
+      &.cities {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "d r";
+        .date-component,
+        .select-component {
+          padding: 5px;
+          &:nth-child(1) {
+            grid-area: d;
+          }
+          &:nth-child(2) {
+            grid-area: r;
           }
         }
       }
