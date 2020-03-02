@@ -115,7 +115,7 @@ class App extends Component {
             <Range
               changeHandle={this.handleChange}
               current={passengers.toString()}
-              max="8"
+              max="100"
               min="1"
               name="passengers"
               step="1" />
