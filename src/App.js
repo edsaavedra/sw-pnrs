@@ -83,7 +83,7 @@ class App extends Component {
             <Dates
               changeHandle={this.handleChange}
               label="Depart"
-              min={this.getDate()}
+              min={this.getDate(1)}
               name="departureDate"
               value={departureDate} />
             <Dates
@@ -115,7 +115,7 @@ class App extends Component {
             <Range
               changeHandle={this.handleChange}
               current={passengers.toString()}
-              max="100"
+              max="8"
               min="1"
               name="passengers"
               step="1" />
